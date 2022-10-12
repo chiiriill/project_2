@@ -1,6 +1,9 @@
 # Моя маленькая программа
 
+![Build Status](https://github.com/chiiriill/project_2/actions/workflows/test_on_push.yaml/badge.svg?branch=master)
+
 ### Документация
+
 
 ***
 
