@@ -1,6 +1,6 @@
 # Моя маленькая программа
 
-![Build Status](https://github.com/chiiriill/project_2/actions/workflows/test_on_push.yaml/badge.svg?branch=master)
+[![Build Status](https://github.com/chiiriill/project_2/actions/workflows/test_on_push.yaml/badge.svg?branch=master)](https://github.com/chiiriill/project_2/actions/workflows/test_on_push.yaml)
 
 ### Документация
 
