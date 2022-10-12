@@ -2,11 +2,12 @@
 def _min(list_numbers: list) -> int:
     """Function find minimum number in list numbers"""
 
-    min_number = list_numbers[0]
-    for number in list_numbers[1:]:
-        if number < min_number:
-            min_number = number
-    return min_number
+    # min_number = list_numbers[0]
+    # for number in list_numbers[1:]:
+    #     if number < min_number:
+    #         min_number = number
+    # return min_number
+    return min(list_numbers)
 
 # @pytest.mark.parametrize('list_num, result', [([12, 3, 4, 5, 0], 0),
 #                                           ([-1, -7, 2], -7),
