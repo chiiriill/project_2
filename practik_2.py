@@ -6,7 +6,7 @@ def read_txt_file(filename: str) -> list:
         return [int(number) for number in file_.read().split()]
 
 
-def _min(list_numbers: list) -> int:
+def _min(list_numbers: list) ->  int:
     """Function find minimum number in list numbers"""
 
     min_number = list_numbers[0]

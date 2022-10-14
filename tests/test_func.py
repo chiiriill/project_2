@@ -15,7 +15,7 @@ def _min(list_numbers: list) -> int:
 #                                           ([2, 2, 2, 2, 1, 2]),
 #                                           ])
 def test_min_func_1():
-    assert _min([12, 3, 4, 5, 0]) == 12
+    assert _min([12, 3, 4, 5, 0]) == 0
 
 
 def test_min_func_2():
