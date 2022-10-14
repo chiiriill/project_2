@@ -30,3 +30,10 @@ jobs:
       - name: Test with pytest
         run: |
           pytest
+
+      - name: "Telegram Notifications"
+        uses: "appleboy/telegram-action@master"
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          args: все ок
