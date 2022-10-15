@@ -33,8 +33,18 @@ jobs:
 
       - name: "Telegram Notifications"
         uses: "appleboy/telegram-action@master"
-        if: ${{ always() }}
-        with:
-          to: ${{ secrets.TELEGRAM_CHAT_ID }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          args: ${{ job.status }}
+#        if: ${{ always() }}
+#        with:
+#          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+#          token: ${{ secrets.TELEGRAM_TOKEN }}
+#          args: ${{ job.status }}
+        if:
+          match: ${{ job.status }} == 'failure'
+          block:
+            to: ${{ secrets.TELEGRAM_CHAT_ID }}
+            token: ${{ secrets.TELEGRAM_TOKEN }}
+            args: всё плохо
+          else:
+            to: ${{ secrets.TELEGRAM_CHAT_ID }}
+            token: ${{ secrets.TELEGRAM_TOKEN }}
+            args: всё ок
